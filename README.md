@@ -105,4 +105,4 @@ fleet-management-system/
 - The system uses SQLite for simplicity - perfect for development and small deployments
 - All data is stored locally in `backend/database.db`
 - The frontend uses modern React hooks and functional components
-- Responsive design works on desktop and mobile devices
+- Responsive design works on desktop and mobile devices# Feet-Management-System
