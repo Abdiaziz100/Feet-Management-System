@@ -1,0 +1,478 @@
+/* MAIN CONTENT */
+.content {
+  padding: 30px;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+}
+
+/* PAGE TITLE */
+.content h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+/* ================= STATS GRID ================= */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* STAT CARD - Enhanced version for StatCard component */
+.stat-card.enhanced {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.2s ease;
+}
+
+.stat-card.enhanced:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: white;
+  flex-shrink: 0;
+}
+
+.stat-card-content {
+  flex: 1;
+  text-align: left;
+}
+
+.stat-card-content h3 {
+  color: #666;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 4px 0;
+}
+
+.stat-card-content .stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.stat-card-content .stat-trend {
+  font-size: 12px;
+  color: #27ae60;
+  margin-top: 4px;
+}
+
+/* Fallback for regular stat-card */
+.stat-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+}
+
+/* ================= CARD SECTIONS ================= */
+
+.metric-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  margin-bottom: 25px;
+}
+
+.metric-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.metric-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ================= RECENT TRIPS ================= */
+
+.trip-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  transition: all 0.2s ease;
+}
+
+.trip-item:hover {
+  background: #e9ecef;
+  transform: translateX(3px);
+}
+
+.trip-icon {
+  font-size: 1.2rem;
+  margin-right: 12px;
+}
+
+.trip-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.trip-route {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.trip-driver {
+  color: #777;
+  font-size: 12px;
+}
+
+.trip-status.completed,
+.completed {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* ================= ALERTS ================= */
+
+.alert {
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.alert.success {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.alert.warning {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
+.alert.info {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+/* ================= HERO SECTION ================= */
+
+.dashboard-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.hero-subtitle {
+  font-size: 14px;
+  opacity: 0.9;
+  margin: 0 0 5px 0;
+}
+
+.hero-date {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* ================= EFFICIENCY GAUGE ================= */
+
+.efficiency-card {
+  grid-column: span 2;
+}
+
+.efficiency-gauge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.gauge-svg {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+.gauge-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #667eea;
+  margin-top: 0.5rem;
+}
+
+.metric-description {
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+  margin-top: 0.5rem;
+}
+
+/* ================= DASHBOARD METRICS ================= */
+
+.dashboard-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* ================= RECENT TRIPS LIST ================= */
+
+.trips-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* ================= ALERTS LIST ================= */
+
+.alerts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.alert-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.alert-item.warning {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
+.alert-item.success {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.alert-item.info {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.alert-icon {
+  font-size: 1.2rem;
+}
+
+.alert-count {
+  background: #e53935;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: auto;
+}
+
+/* ================= VIEW ALL BUTTON ================= */
+
+.view-all-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.view-all-btn:hover {
+  background: #5a6fd8;
+  transform: translateY(-1px);
+}
+
+.no-data {
+  text-align: center;
+  color: #999;
+  padding: 20px;
+  font-style: italic;
+}
+
+/* ================= NAVIGATION CARDS ================= */
+
+.nav-cards-section {
+  margin-top: 2rem;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.nav-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.nav-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.nav-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: #667eea;
+}
+
+.nav-card-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.nav-card h4 {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+}
+
+.nav-card p {
+  color: #777;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.nav-card-arrow {
+  float: right;
+  font-size: 1.2rem;
+  color: #667eea;
+  margin-top: -20px;
+}
+
+/* ================= LOADING STATE ================= */
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  gap: 15px;
+}
+
+.loading-container .spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(102, 126, 234, 0.2);
+  border-top: 3px solid #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-container p {
+  color: #777;
+  font-size: 14px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  .dashboard-metrics {
+    grid-template-columns: 1fr;
+  }
+  .efficiency-card {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 15px;
+  }
+  
+  .dashboard-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 22px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .nav-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
