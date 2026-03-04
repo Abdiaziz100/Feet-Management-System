@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5002",
+  baseURL: "https://feet-management-system-4.onrender.com",
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json'
